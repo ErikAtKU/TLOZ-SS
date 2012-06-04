@@ -12,8 +12,6 @@ def translate(name,text):
     text = re.sub("[iI]","x",text)
     text = re.sub("[oO]","z",text)
     text = re.sub("[pP]","t",text)
-    print text
-    path = sys.path[0]+"\SS\\"
     path = sys.path[0]+"\SS\\"
     im = Image.open(path+"a.bmp")
     line = text.split("@")
